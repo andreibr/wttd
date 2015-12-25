@@ -28,13 +28,11 @@ def remove_adjacent(nums):
 # pass of both lists.
 def linear_merge(list1, list2):
     list3 = []
-    for i in list1:
-        list3.append(i)
     for i in list2:
-        list3.append(i)
+        list1.append(i)
 
-    list3.sort()
-    return list3
+    list1.sort()
+    return list1
 
 
 # Note: the solution above is kind of cute, but unforunately list.pop(0)
